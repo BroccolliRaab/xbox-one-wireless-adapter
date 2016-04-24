@@ -620,9 +620,9 @@ NDIS_STATUS andes_usb_loadfw(RTMP_ADAPTER *ad)
 
 	build_ver = (*(cap->FWImageName + 9) << 8) | (*(cap->FWImageName + 8));
 
-	DBGPRINT(RT_DEBUG_OFF, ("fw version:%d.%d.%02d ",
+	DBGPRINT(RT_DEBUG_OFF, ("fw version:%d.%d.%02d (%s) ",
 			(fw_ver & 0xf000) >> 8, (fw_ver & 0x0f00) >> 8,
-			fw_ver & 0x00ff));
+			fw_ver & 0x00ff, cap->fw_bin_file_name));
 	DBGPRINT(RT_DEBUG_OFF, ("build:%x\n", build_ver));
 	DBGPRINT(RT_DEBUG_OFF, ("build time:"));
 

@@ -40,6 +40,7 @@
 #include "ap_autoChSel_cmm.h"
 #endif
 
+#include "wsc.h"
 #include "rtmp_chip.h"
 
 #ifdef DOT11W_PMF_SUPPORT

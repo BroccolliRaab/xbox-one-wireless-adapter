@@ -727,7 +727,7 @@ Note:
 */
 UAPSD_EXTERN VOID UAPSD_TagFrame(
 	IN	RTMP_ADAPTER		*pAd,
-	IN	NDIS_PACKET			*pPkt,
+	IN	PNDIS_PACKET		pPkt,
 	IN	UCHAR				Wcid,
 	IN	UINT32				PktOffset);
 
